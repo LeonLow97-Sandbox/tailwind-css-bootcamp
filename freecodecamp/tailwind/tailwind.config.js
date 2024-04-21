@@ -23,6 +23,11 @@ export default {
           932: '#458320',
         },
       },
+      fontSize: {
+        base: '18px',
+        sm: '15px',
+        xs: '12px',
+      },
     },
   },
   plugins: [],

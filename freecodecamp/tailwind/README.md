@@ -13,12 +13,31 @@ npm install
 npm run dev
 ```
 
+```
+## Add Prettier class sorting in tailwind css
+## Link: https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
+npm install -D prettier prettier-plugin-tailwindcss
+
+## Create a `.prettierrc` file and add the following
+{
+    "plugins": [
+        "prettier-plugin-tailwindcss"
+    ]
+}
+```
+
+## Tailwind Cheatsheet
+
+- [Cheat Sheet](https://tailwindcomponents.com/cheatsheet/)
+
 ## What is tailwindcss?
 
 - Tailwind CSS is a CSS library with predefined CSS styles.
 - Has breakpoint prefixes to deal with responsiveness.
 
 ## Adding Customize Colors in Tailwind CSS
+
+- `extend` keeps the initial configuration of tailwind, and it adds on top of what tailwind already has. If put outside of `extend`, then it overrides what tailwind offers.
 
 ```js
 export default {
@@ -74,14 +93,35 @@ spacing: {
 
 ## Apply tailwind with custom css in style.css
 
+- `@apply` is not recommended.
+
 ```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply bg-slate-500 text-white text-lg font-bold;
-    }
+  html {
+    @apply bg-slate-500 text-white text-lg font-bold;
+  }
+}
+```
+
+## Adding Google Fonts in Tailwind
+
+- Add in `style.css`, the global css file.
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-black;
+    font-family: 'Inter', sans-serif;
+  }
 }
 ```
