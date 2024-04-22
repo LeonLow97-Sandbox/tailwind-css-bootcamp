@@ -2,6 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
+    // Automatically center `container` class
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         vuejs: {

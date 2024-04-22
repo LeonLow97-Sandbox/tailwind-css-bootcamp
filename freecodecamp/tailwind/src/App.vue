@@ -3,7 +3,9 @@
   <!-- <Typography /> -->
   <!-- <Padding /> -->
   <!-- <Flex /> -->
-  <Grid />
+  <!-- <Grid /> -->
+  <!-- <Layouts /> -->
+  <Position />
 </template>
 
 <script setup>
@@ -12,4 +14,6 @@ import Typography from "./components/Typography.vue";
 import Padding from "./components/Padding.vue";
 import Flex from "./components/Flex.vue";
 import Grid from "./components/Grid.vue";
+import Layouts from "./components/Layouts.vue";
+import Position from "./components/Position.vue";
 </script>

@@ -130,3 +130,11 @@ spacing: {
 
 - `-mt-8`
 - `-mb-4`
+
+## Tailwind Container
+
+- Tailwind container is a component for fixing an element's width to the current breakpoint.
+
+```html
+ <div class="container columns-lg px-2">
+```
