@@ -7,7 +7,8 @@
   <!-- <Layouts /> -->
   <!-- <Position /> -->
   <!-- <Border /> -->
-  <Effects />
+  <!-- <Effects /> -->
+  <Animation />
 </template>
 
 <script setup>
@@ -20,4 +21,5 @@ import Layouts from "./components/Layouts.vue";
 import Position from "./components/Position.vue";
 import Border from "./components/Border.vue";
 import Effects from "./components/Effects.vue";
+import Animation from "./components/Animation.vue";
 </script>
