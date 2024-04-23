@@ -8,7 +8,8 @@
   <!-- <Position /> -->
   <!-- <Border /> -->
   <!-- <Effects /> -->
-  <Animation />
+  <!-- <Animation /> -->
+  <DesignSystem />
 </template>
 
 <script setup>
@@ -22,4 +23,5 @@ import Position from "./components/Position.vue";
 import Border from "./components/Border.vue";
 import Effects from "./components/Effects.vue";
 import Animation from "./components/Animation.vue";
+import DesignSystem from "./components/DesignSystem.vue";
 </script>
