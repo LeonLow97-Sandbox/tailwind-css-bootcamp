@@ -5,7 +5,8 @@
   <!-- <Flex /> -->
   <!-- <Grid /> -->
   <!-- <Layouts /> -->
-  <Position />
+  <!-- <Position /> -->
+  <Border />
 </template>
 
 <script setup>
@@ -16,4 +17,5 @@ import Flex from "./components/Flex.vue";
 import Grid from "./components/Grid.vue";
 import Layouts from "./components/Layouts.vue";
 import Position from "./components/Position.vue";
+import Border from "./components/Border.vue";
 </script>
