@@ -41,15 +41,15 @@ npm install -D prettier prettier-plugin-tailwindcss
 
 ```js
 export default {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         vuejs: {
-          100: '#49e659',
-          932: '#434252',
+          100: "#49e659",
+          932: "#434252",
         },
-        react: '#493585',
+        react: "#493585",
       },
     },
   },
@@ -102,7 +102,7 @@ spacing: {
 
 @layer base {
   html {
-    @apply bg-slate-500 text-white text-lg font-bold;
+    @apply bg-slate-500 text-lg font-bold text-white;
   }
 }
 ```
@@ -112,7 +112,7 @@ spacing: {
 - Add in `style.css`, the global css file.
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -121,7 +121,7 @@ spacing: {
 @layer base {
   html {
     @apply text-black;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 }
 ```
@@ -136,5 +136,35 @@ spacing: {
 - Tailwind container is a component for fixing an element's width to the current breakpoint.
 
 ```html
- <div class="container columns-lg px-2">
+<div class="container columns-lg px-2"></div>
+```
+
+## Dark Mode
+
+- Go to `tailwind.config.js` file and add the following:
+
+```js
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  ...
+}
+```
+
+- Add to `index.html` file on `<html class="dark" id="html-root">` tag and `<body class="dark:bg-slate-900 text-white">` tag
+
+```html
+<!doctype html>
+<html lang="en" class="dark" id="html-root">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+  </head>
+  <body class="dark:bg-slate-900 dark:text-white">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
 ```

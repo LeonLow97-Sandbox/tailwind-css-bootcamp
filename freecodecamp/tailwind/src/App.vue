@@ -9,7 +9,8 @@
   <!-- <Border /> -->
   <!-- <Effects /> -->
   <!-- <Animation /> -->
-  <DesignSystem />
+  <!-- <DesignSystem /> -->
+  <DarkMode />
 </template>
 
 <script setup>
@@ -24,4 +25,5 @@ import Border from "./components/Border.vue";
 import Effects from "./components/Effects.vue";
 import Animation from "./components/Animation.vue";
 import DesignSystem from "./components/DesignSystem.vue";
+import DarkMode from "./components/DarkMode.vue";
 </script>
