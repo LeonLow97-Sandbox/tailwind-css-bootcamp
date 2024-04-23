@@ -6,7 +6,8 @@
   <!-- <Grid /> -->
   <!-- <Layouts /> -->
   <!-- <Position /> -->
-  <Border />
+  <!-- <Border /> -->
+  <Effects />
 </template>
 
 <script setup>
@@ -18,4 +19,5 @@ import Grid from "./components/Grid.vue";
 import Layouts from "./components/Layouts.vue";
 import Position from "./components/Position.vue";
 import Border from "./components/Border.vue";
+import Effects from "./components/Effects.vue";
 </script>
